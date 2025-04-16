@@ -85,6 +85,8 @@ button {
   cursor: pointer;
 }
 
+/*Below is the code for error messaging when incorrect input has been entered*/
+/*shows up as red writing beneath input container*/
 .error-message {
   color: #e70064;
   font-size: 10px;
