@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="validation.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <form id="courseBookingForm" onsubmit="return validateForm(event)">
+          <div class="form-group">
+            <label for="fullName">Name:</label>
+            <div class="input-container">
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Enter Your Name"
+                onblur="validateName()"
+              />
+              <div id="nameError" class="error-message"></div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <div class="input-container">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter Your Email"
+                onblur="validateEmail()"
+              />
+              <div id="emailError" class="error-message"></div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="cardNumber">Card:</label>
+            <div class="input-container">
+              <input
+                type="text"
+                id="cardNumber"
+                name="cardNumber"
+                placeholder="Enter a Valid Credit Card Number"
+                onblur="validateCard()"
+              />
+              <div id="cardError" class="error-message"></div>
+            </div>
+          </div>
+
+          <div class="button-group">
+            <button type="submit" id="submitBtn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

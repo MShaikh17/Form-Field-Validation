@@ -1,0 +1,91 @@
+/* Reset default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main styling */
+body {
+  font-family: Calibri, "Calibri", sans-serif;
+  font-size: 12px;
+  background-color: #ccc;
+  color: #3c3c3b;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background-color: rgb(137, 200, 46);
+  padding: 10px;
+  border-radius: 40px;
+  width: 50%;
+  max-width: 100%;
+  border: 5px solid #333;
+}
+
+.form-group {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: flex-start;
+  margin-left: 50px;
+}
+
+label {
+  width: 45px;
+  margin-right: 5px;
+  font-weight: bold;
+  text-align: right;
+  padding-top: 5px;
+}
+
+.input-container {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 3px;
+
+}
+
+input {
+  width: 85%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  font-family: Calibri, "Calibri", sans-serif;
+  font-size: 11px;
+  height: 25px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  width: 105%;
+  text-align: center;
+}
+
+button {
+  background-color: #e70064;
+  border-color: #3c3c3b;
+  border-radius: 4px;
+  font-family: Calibri, "Calibri", sans-serif;
+  font-size: 12px;
+  width: 80px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.error-message {
+  color: #e70064;
+  font-size: 10px;
+}
