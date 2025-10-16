@@ -1,6 +1,6 @@
 # Form Field Validation
 
-A simple form for user to input information, with validation for username, email and credit card number.
+A simple form for users to input information, with data validation for username, email and credit card number.
 <br> 
 </br>
 
