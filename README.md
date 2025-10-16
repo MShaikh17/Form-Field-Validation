@@ -73,7 +73,7 @@ function validateCard() {
     if (isSecond) {
       digit *= 2;
 
-      // Step 5: If doubling results in two-digit number, add digits
+      // Step 5: f the doubled digit is greater than 9, sum its digits (e.g., 12 becomes 1 + 2 = 3)
       if (digit > 9) {
         digit = Math.floor(digit / 10) + (digit % 10);
       }
